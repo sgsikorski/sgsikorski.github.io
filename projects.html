@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us"></html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="generator" content="Hugo 0.59.1">
+    <meta name="referrer" content="origin">
+    <meta name="viewport" content="width-devide-width,initial-scale=1.0, maximum-scale=1">
+
+    <title>My projects</title>
+    <link rel = "stylesheet" href="projects.css">
+    <meta property="og:url" content="https://www.scottsikorski.com/projects/">
+    <meta property="og:title" content="My projects">
+</head>
+
+<body class = "all">
+    <div class = "header">
+        <div class="container">
+            <div class ="header-about">
+                <a href="https://scottsikorski.com">
+                    <h1>Scott Sikorski</h1>
+                </a>
+                <h2 id="quick-description">
+                    Aspiring software engineer, Research assistant, Efficiency enthusiast 
+                </h2>
+            </div>
+            <div class="menu">
+                
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="/home">About</a>
+                    </li>
+                    <li>
+                        <a href="/">Projects</a>
+                    </li>
+                    <li>
+                        <a href="/research">Research</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="sidebar-socials">
+                    <li>
+                        <a href='https://github.com/sgsikorski'>Github</a>
+                    </li>
+                    <li>
+                        <a href="https://hajim.rochester.edu/me/sites/sefkow/about/index.html">Research Overview</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/scott-sikorski-733a601b5/">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/scott.ss/">Instagram</a>
+                    </li>
+                </ul>
+
+            </div>
+            
+        </div>
+    </div>
+
+    <div class = "main">
+        <div class ="project1">
+            <h1>Running Log</h1>
+            <p>
+                I decided to build a running log during the pandemic as a way to stay sane and reduce my likeihood of overtraining.
+                It is written in Python3 where users can add runs with distances, times, time of day, date, and comments. This data is 
+                stored in a csv which is kept stored sorted in order by date whenever users add new runs. Because we have an already sorted
+                insertion sort is use after a user adds a run.
+            </p>
+            <div class="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>Adding runs and being able to switch between imperial and metric units</li>
+                    <li>Fully interactive calendar that displays distance, time, and pace for each day in a month</li>
+                    <ul><li>Users can then click on the date in the calendar to see more info</li></ul>
+                    <li>Training load status. Determine if training is enough and if there's a risk for injury</li>
+                    <ul><li>Sleep data is scraped from Garmin API</li></ul>
+
+                </ul> 
+            </div>
+        </div>
+
+        <div class="school-projects">
+            <h1>File compression</h1>
+            <p>
+                Class project in Java where given a file of any extension to reduce its memory storage.
+                Huffman encoding algorithm is used to reduce the storage of upwards of 100% and usually 50%.
+                Project also enables the user to decompress the file and see its original version.
+            </p>
+            <h1>Regular expression parser</h1>
+            <p>
+                Class project that parses a regular expression and determines if it is valid.
+                Table-driven and recursive descent parsing algorithms written in C are both used.
+            </p>
+        </div>
+    </div>
+    
+</body>

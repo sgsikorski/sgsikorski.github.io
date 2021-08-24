@@ -1,0 +1,138 @@
+.all{
+    margin:0px;
+}
+
+.sidebar-menu a:hover{
+    text-decoration: underline;
+}
+
+.header-about a:hover{
+    text-decoration:underline;
+}
+
+.header-about{
+    text-align: center;
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+    background-color: black;
+    opacity:.8;
+    height:auto;
+    width:auto;
+}
+
+.header-about a{
+    font-size:30px;
+    color:white;
+    text-decoration: none;
+}
+
+.quick-description{
+    font-size:24px;
+    text-align:center;
+    height:auto;
+    width:auto;
+}
+
+.menu{
+    background-color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-size:20px;
+    color:black;
+    height:75px;
+}
+
+.sidebar-menu{
+    background-color: white;
+}
+
+.sidebar-menu li{
+    padding-top:10px;
+    text-align:center;
+    width:25%;
+    float:left;
+    vertical-align: top;
+    list-style-type:none;
+}
+
+.sidebar-menu li a{
+    text-decoration:none;
+    color:black;
+}
+
+.sidebar-socials{
+    background-color: white;
+}
+.sidebar-socials li{
+    padding-top:10px;
+    text-align:center;
+    width:25%;
+    float:left;
+    vertical-align: top;
+    list-style-type: none;
+}
+
+.sidebar-socials li a{
+    color:black;
+}
+
+.main{
+    background-color: white;
+}
+
+.project1{
+    height:auto;
+}
+
+.project1 h1{
+    text-align:center;
+    font-size:36px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.project1 p{
+    padding-left:15%;
+    padding-right:15%;
+    color:black;
+    font-size:18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.features h2{
+    font-size:30px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.features{
+    padding-left:15%;
+    padding-bottom:100px;
+}
+
+.project1 li{
+    font-size:20px;
+    float:left;
+    list-style-type:circle;
+    width:100%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.project1 li li{
+    font-size:20px;
+    float:left;
+    list-style-type: square;
+}
+
+.school-projects h1{
+    text-align:center;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:36px;
+}
+
+.school-projects p{
+    padding-left:15%;
+    padding-right:15%;
+    color:black;
+    font-size:18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,163 @@
+.all{
+    margin:0px;
+}
+
+.header-about a:hover{
+    text-decoration:underline;
+}
+
+.header img{
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    display:inline-block;
+}
+
+.header-about{
+    text-align: center;
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+    background-color: black;
+    opacity:.8;
+    height:auto;
+    width:auto;
+}
+
+.header-about a{
+    font-size:30px;
+    color:white;
+    text-decoration: none;
+}
+
+.quick-description{
+    font-size:24px;
+    text-align:center;
+    height:auto;
+    width:auto;
+}
+
+.menu{
+    background-color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-size:20px;
+    color:black;
+    height:75px;
+}
+
+.sidebar-menu{
+    background-color: white;
+}
+
+.sidebar-menu li{
+    padding-top:10px;
+    text-align:center;
+    width:25%;
+    float:left;
+    vertical-align: top;
+    list-style-type:none;
+}
+
+.sidebar-menu a:hover{
+    text-decoration: underline;
+}
+
+.sidebar-menu li a{
+    text-decoration:none;
+    color:black;
+}
+
+.sidebar-socials{
+    background-color: white;
+}
+.sidebar-socials li{
+    padding-top:10px;
+    text-align:center;
+    width:25%;
+    float:left;
+    vertical-align: top;
+    list-style-type: none;
+}
+
+.sidebar-socials li a{
+    color:black;
+}
+
+.main{
+    margin:0px;
+    background-color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.main-container{
+    padding-left:10%;
+    padding-right:10%;
+    color:black;
+}
+
+.about-me{
+    padding-top:100px;
+    padding-left:2.5%;
+}
+
+.about-me p{
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    padding-left:5%; 
+}
+
+.right-now{
+    padding-top:50px;
+}
+
+.main-container h2{
+    padding-left: 2.5%;
+}
+
+.main-container h2 a{
+    text-decoration: none;
+    color:black;
+}
+
+.main-container p{
+    font-size:20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left:5%;
+}
+
+.contact-main{
+    margin:0px;
+}
+
+.contactContainer{
+    background-color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:black;
+}
+
+.contactContainer h1{
+    text-align:center;
+}
+
+.contactContainer p{
+    padding-left:50px;
+}
+
+.contactContainer h2{
+    padding-left:100px;
+}
+
+.contactContainer h2 a{
+    text-decoration:none;
+    color:black;
+    opacity:0.8;
+}
+
+.main-container a:hover{
+    text-decoration:underline;
+}
+
+.contactContainer img{
+    width:200px;
+    height:200px;
+    padding-left:43%;
+}
