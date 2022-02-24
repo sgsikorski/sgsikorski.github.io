@@ -98,6 +98,38 @@
 
 }
 
+.SpruceLocks{
+    height:auto;
+}
+
+.SpruceLocks h1{
+    text-align:center;
+    font-size:36px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.SpruceLocks p{
+    padding-left:15%;
+    padding-right:15%;
+    color:black;
+    font-size:18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.SpruceLocks li{
+    font-size:20px;
+    float:left;
+    list-style-type:circle;
+    width:100%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.SpruceLocks li li{
+    font-size:20px;
+    float:left;
+    list-style-type: square;
+}
+
 .features h2{
     font-size:30px;
     font-family:'Courier New', Courier, monospace;
@@ -106,6 +138,20 @@
 .features{
     padding-left:15%;
     padding-bottom:100px;
+}
+
+.features li{
+    font-size:20px;
+    float:left;
+    list-style-type:circle;
+    width:100%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.features li li{
+    font-size:20px;
+    float:left;
+    list-style-type: square;
 }
 
 .project1 li{

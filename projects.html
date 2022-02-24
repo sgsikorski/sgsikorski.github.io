@@ -83,17 +83,58 @@
             </div>
         </div>
 
+        <div class="SpruceLocks">
+            <h1><a href='https://github.com/sgsikorki/SpruceLocks'>House automation</a></h1>
+            <p>
+                A variety of projects for my college house that improves the quality of life. Almost all these projects are run using Raspberry Pi's
+                <div class = "features">
+                    <ul>
+                        <li>Sound request station
+                            <ul>
+                                <li>Touchscreen jukebox where people are able to control the music on the main floor</li>
+                                <li>Filter added to block songs. Funny messages are then displayed based on who I think requested it</li>
+                            </ul>
+                        </li>
+                        <li>Card swipe access to house locks
+                            <ul>
+                                <li>Using our URID cards, we can swipe, using an electromagnetic card reader, into the house, unlocking or locking the door</li>
+                                <li>A servo is used to control the rods that rotate the deadlock.</li>
+                                <li>Mechanical locking is supported as the program can recognize if the state of the lock is different from last usage.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </p>
+        </div>
+
         <div class="school-projects">
+            <h1>Machine independent optimized C compiler</h1>
+            <p>
+                For a subset of the C programming language, I built a compiler that scans, parses, builds intermediate representations, and optimizes the code.
+                Scanner, parser, and abstract syntax tree (AST) are built using C++. 3 address code and all optimizations are implemented using Python3.
+            </p>
+            <div class="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>Scanner that finds syntax errors</li>
+                    <li>Parser that builds an abstract syntax tree (AST) Error recovery is implented using Wirth's algorithm so that after an error, the program will
+                        recover to find additional errors that are displayed to user.
+                    </li>
+                    <li>From AST, 3 address code is generated, which is machine independent, not control flow bound low level code</li>
+                    <li>Using 3 address code, our basic blocks and control flow graph are generated to perform optimizations and thus data flow analysis</li>
+                </ul>
+                <h2>Optimization methods used</h2>
+                <ul>
+                    <li>Local Value Numbering</li>
+                    <li>Dead Code elimination</li>
+                    <li>Partial redunancy elimination</li>
+                </ul>
+            </div>
             <h1>File compression</h1>
             <p>
                 Class project in Java where given a file of any extension to reduce its memory storage.
                 Huffman encoding algorithm is used to reduce the storage of upwards of 100% and usually 50%.
                 Project also enables the user to decompress the file and see its original version.
-            </p>
-            <h1>Regular expression parser</h1>
-            <p>
-                Class project that parses a regular expression and determines if it is valid.
-                Table-driven and recursive descent parsing algorithms written in C are both used.
             </p>
         </div>
     </div>

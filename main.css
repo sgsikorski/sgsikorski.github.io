@@ -124,6 +124,12 @@
     padding-left:5%;
 }
 
+.main-container h3{
+    font-size:12px;
+    font-family:'Times New Roman', Times, serif;
+    padding-left:45%;
+}
+
 .contact-main{
     margin:0px;
 }

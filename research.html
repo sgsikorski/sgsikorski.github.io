@@ -63,10 +63,9 @@
 
     <div class="main">
         <div class = "heading">
-            <h1>My research under Dr. Adam B. Sefkow</h1>
+            <h1><a href='https://github.com/sgsikorski/3dDiffusion'></a>My research under Dr. Adam B. Sefkow</h1>
             <a href="https://hajim.rochester.edu/me/sites/sefkow/about/index.html">Quick overview of TriForce</a>
             <h2>Algorithm development for physics simulations</h2>
-            <p>Note: Programs unavailable on GitLab at the moment but are available on request</p>
         </div>
         
         <div class="main-container">
@@ -95,7 +94,7 @@
                 temperature, pressure, and velocity variance. After that, we destroy the particles.
             </p>
             <h2>The why</h2>
-            <img src="dsmcvsqds.JPG" alt="Diffusion of a slab simulation" clas="center">
+            <img src="endResults3dDiff.jfif" alt="Diffusion of a slab simulation" clas="center">
             <p>
                 From this new method of QDSMC, there is a time save of ~18x so our computational complexity greatly reduces. As well,
                 because there is less noise (less random spikes), we can use this faster method to simulate experiments and use
@@ -114,7 +113,12 @@
                     <li>I created the extension to 2D and 3D for all methodology of QDSMC</li>
                     <li>Program now simulates it in user chosen dimensions</li>
                 </ul>
-                <li>All written in Python as of now, to be translated into C++ during Fall 2021</li>
+                <li>Python, C++, Cuda Runtime</li>
+                <ul>
+                    <li>Python: ~35 minutes</li>
+                    <li>C++: ~30 seconds</li>
+                    <li>Cuda: &lt;1 second</li>
+                </ul>
             </ul>
         </div>
 
