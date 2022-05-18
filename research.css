@@ -89,6 +89,17 @@
     font-size:40px;
 }
 
+.heading h1 a{
+    text-decoration:none;
+    color:black;
+    text-align:center;
+    font-size:40px;
+}
+
+.heading h1 a:hover{
+    text-decoration:underline;
+}
+
 .heading a{
     text-decoration:none;
     color:black;

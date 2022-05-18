@@ -63,63 +63,13 @@
 
     <div class="main">
         <div class = "heading">
-            <h1><a href='https://github.com/sgsikorski/3dDiffusion'></a>My research under Dr. Adam B. Sefkow</h1>
+            <h1><a href="QDS-Sikorski-FINAL.pdf">My research under Dr. Adam B. Sefkow</a></h1>
             <a href="https://hajim.rochester.edu/me/sites/sefkow/about/index.html">Quick overview of TriForce</a>
             <h2>Algorithm development for physics simulations</h2>
         </div>
         
         <div class="main-container">
-            <h2>General overview</h2>
-            <p>
-                I started with an algorithm called Direct Simulation Monte Carlo (DSMC) which is a method of simulating fluids
-                where a high particle count is used for simulations that are still considered noisy and unusable. From there
-                Quiet Direct Simulation Monte Carlo (QDSMC) was developed that is practical in terms of computational complexity
-                and simulations.
-            </p>
-            <p>
-                After doing QDSMC for the diffusion of a slab using only the density values, I created this algorithm to be expanded to 3d,
-                include velocity, temperature, and pressure of the fluid, and allow user accessibility.
-            </p>
-            <h2>How it works</h2>
-            <p>
-                QDSMC begins at time = t where dt is set by the user. We create particles in each cell of the fluid where the cell 
-                has quantities such as density, average velocity, temperature, and pressure. Then in each cell where particles exist 
-                (because the density of that cell is 0), a user set number of particles are created and each particles' mass, velocity,
-                and specific internal energy are calculated. These particles are gaussianly distrubuted so we use a hermite-gaussian quadruate
-                to determine the weights of each particle.
-            </p>
-            <p>
-                Once we advance our particles to their t+dt new position, the mass, momentum, and energy of all the cells are now tabulated
-                using the cell and its adjacent cells. From these collected values, we can only calculate our new t+dt density, average velocity,
-                temperature, pressure, and velocity variance. After that, we destroy the particles.
-            </p>
-            <h2>The why</h2>
-            <img src="endResults3dDiff.jfif" alt="Diffusion of a slab simulation" clas="center">
-            <p>
-                From this new method of QDSMC, there is a time save of ~18x so our computational complexity greatly reduces. As well,
-                because there is less noise (less random spikes), we can use this faster method to simulate experiments and use
-                those results as if they were real life experiments, saving a lot of time and power usage.
-            </p>
-            <h2>Additional features</h2>
-            <ul>
-                <li>User can choose the molecule they want to work with so it becomes extensively accessible</li>
-                <ul>
-                    <li>Using a library I built, user requests an atom with its atomic number then gets all of its info</li>
-                    <li>Hash map simulates a periodic table where buckets coorespond to atomic number and row contains the stable atom and all its isotopes</li>
-                </ul>
-                <li>User can choose their initial conditions for density and temperature</li>
-                <li>2D and 3D models are created</li>
-                <ul>
-                    <li>I created the extension to 2D and 3D for all methodology of QDSMC</li>
-                    <li>Program now simulates it in user chosen dimensions</li>
-                </ul>
-                <li>Python, C++, Cuda Runtime</li>
-                <ul>
-                    <li>Python: ~35 minutes</li>
-                    <li>C++: ~30 seconds</li>
-                    <li>Cuda: &lt;1 second</li>
-                </ul>
-            </ul>
+            <iframe src="QDS-Sikorski-FINAL.pdf" width="100%" height="650px"></iframe>
         </div>
 
     </div>
