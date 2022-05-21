@@ -133,6 +133,8 @@
 
 .main-container p{
     padding-left:2.5%;
+    align-items: center;
+    font-size:24px;
 }
 
 .main-container li{
