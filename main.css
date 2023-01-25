@@ -36,6 +36,13 @@
     width:auto;
 }
 
+.header-about h1{
+    font-size:48px;
+    text-align:center;
+    height:auto;
+    width:auto;
+}
+
 .menu{
     background-color: white;
     font-family:'Courier New', Courier, monospace;
@@ -122,6 +129,13 @@
     font-size:20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-left:5%;
+}
+
+.main-container li{
+    font-size:20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    list-style: none;
+    padding-left:2%;
 }
 
 .main-container h3{

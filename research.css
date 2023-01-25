@@ -111,6 +111,13 @@
     text-decoration:underline;
 }
 
+.header-about h1{
+    font-size:48px;
+    text-align:center;
+    height:auto;
+    width:auto;
+}
+
 .heading h2{
     text-align:center;
     font-size:34px;
