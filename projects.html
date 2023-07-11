@@ -25,7 +25,7 @@
                 </h1>
                 
                 <h2 id="quick-description">
-                    Garmin Embeeded Systems Software Engineer, Research assistant, Advanced Compilers TA 
+                    Garmin Embedded Systems Software Engineer
                 </h2>
             </div>
             <div class="menu">
@@ -56,7 +56,7 @@
                         <a href="https://www.linkedin.com/in/scott-sikorski-733a601b5/">LinkedIn</a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/scott.ss/">Instagram</a>
+                        <a href="https://www.instagram.com/scott.sikorski/">Instagram</a>
                     </li>
                 </ul>
 
@@ -66,51 +66,6 @@
     </div>
 
     <div class = "main">
-        <div class ="project1">
-            <h1>Running Log</h1>
-            <p>
-                I decided to build a running log during the pandemic as a way to stay sane and reduce my likelihood of overtraining.
-                It is written in Python3 where users can add runs with distances, times, time of day, date, and comments. This data is 
-                stored in a .csv file which is sorted in order by date whenever users add new runs. Because we have an already sorted 
-                file, insertion sort is use after a user adds a run.
-            </p>
-            <div class="features">
-                <h2>Features</h2>
-                <ul>
-                    <li>Adding runs and being able to switch between imperial and metric units</li>
-                    <li>Fully interactive calendar that displays distance, time, and pace for each day in a month</li>
-                    <ul><li>Users can then click on the date in the calendar to see more info</li></ul>
-                    <li>Training load status. Determine if training is enough and if there's a risk for injury</li>
-                    <ul><li>Sleep data is scraped from Garmin API</li></ul>
-
-                </ul> 
-            </div>
-        </div>
-
-        <div class="SpruceLocks">
-            <h1><a href='https://github.com/sgsikorki/SpruceLocks'>House automation</a></h1>
-            <p>
-                A variety of projects for my college house that improves the quality of life. Almost all these projects are run using Raspberry Pi's
-                <div class = "features">
-                    <ul>
-                        <li>Sound request station
-                            <ul>
-                                <li>Touchscreen jukebox where people are able to control the music on the main floor</li>
-                                <li>Filter added to block songs. Funny messages are then displayed based on who I think requested it</li>
-                            </ul>
-                        </li>
-                        <li>Card swipe access to house locks
-                            <ul>
-                                <li>Using our URID cards, we can swipe, using an electromagnetic card reader, into the house, unlocking or locking the door</li>
-                                <li>A servo is used to control the rods that rotate the deadlock.</li>
-                                <li>Mechanical locking is supported as the program can recognize if the state of the lock is different from last usage.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </p>
-        </div>
-
         <div class="school-projects">
             <h1>Machine independent optimized C compiler</h1>
             <p>
@@ -134,12 +89,73 @@
                     <li>Partial redunancy elimination</li>
                 </ul>
             </div>
+            <h1>Autonomous 7 degree of freedom robot</h1>
+            <p>
+                Robot autonomously performs grasping and placing of objects in a world environment.
+                World environment is built using sensors as state space is discretized over pi/16.0 radians.
+                Rapidly exploring random trees (RRTs) are used to sample the state space and find shortest path.
+                This is done by randomly sampling in robot link and joint limits then finding the nearest
+                constructed node. A new node is added pi/16.0 radians in the direction of the sampled node
+                and creates an edge between the nearest and new nodes. The back reference pointer to this
+                node is then tracked to find the shortest path.
+            </p>
+            <p>
+                A short demonstration of the routing of the grasp (blue) and place (red) is shown below.
+            </p>
+            <video width="480" height="320" controls>
+                <source src="grasp_place.mov" type="video/mov">
+                Your browser does not support videos.
+            </video>
             <h1>File compression</h1>
             <p>
                 Class project in Java where given a file of any extension to reduce its memory storage.
                 Huffman encoding algorithm is used to reduce the storage of upwards of 100% and usually 50%.
                 Project also enables the user to decompress the file and see its original version.
             </p>
+        </div>
+        <div class="SpruceLocks">
+            <h1><a href='https://github.com/sgsikorki/SpruceLocks'>House automation</a></h1>
+            <p>
+                A variety of projects for my college house that improves the quality of life. Almost all these projects are run using Raspberry Pi's
+                <div class = "features">
+                    <ul>
+                        <li>Sound request station
+                            <p>
+                                Multi-user jukebox site that can be accessed through people's phones that are authorized. Authorization
+                                is done through connection to home wifi network. Touchscreen tablet is also used to create a real jukebox.
+                                Spotify API is then accessed to add songs to queue after passing through my filter.
+                            </p>
+                        </li>
+                        <li>Card swipe access to house locks
+                            <ul>
+                                <li>Using our URID cards, we can swipe, using an electromagnetic card reader, into the house, unlocking or locking the door</li>
+                                <li>A servo is used to control the rods that rotate the deadlock.</li>
+                                <li>Mechanical locking is supported as the program can recognize if the state of the lock is different from last usage.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </p>
+        </div>
+        <div class ="project1">
+            <h1>Running Log</h1>
+            <p>
+                I decided to build a running log during the pandemic as a way to stay sane and reduce my likelihood of overtraining.
+                It is written in Python3 where users can add runs with distances, times, time of day, date, and comments. This data is 
+                stored in a .csv file which is sorted in order by date whenever users add new runs. Because we have an already sorted 
+                file, insertion sort is use after a user adds a run.
+            </p>
+            <div class="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>Adding runs and being able to switch between imperial and metric units</li>
+                    <li>Fully interactive calendar that displays distance, time, and pace for each day in a month</li>
+                    <ul><li>Users can then click on the date in the calendar to see more info</li></ul>
+                    <li>Training load status. Determine if training is enough and if there's a risk for injury</li>
+                    <ul><li>Sleep data is scraped from Garmin API</li></ul>
+
+                </ul> 
+            </div>
         </div>
     </div>
     
