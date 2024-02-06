@@ -1,183 +1,89 @@
-.all{
-    margin:0px;
+body {
+    font-family: 'Monaco', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.header-about a:hover{
-    text-decoration:underline;
-}
-
-.header img{
-    height:100px;
-    width:100px;
-    border-radius:50%;
-    display:inline-block;
-}
-
-.header-about{
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
     text-align: center;
-    color:white;
-    font-family:'Courier New', Courier, monospace;
-    background-color: black;
-    opacity:.8;
-    height:auto;
-    width:auto;
 }
 
-.header-about a{
-    font-size:30px;
-    color:white;
-    text-decoration: none;
-}
-
-.quick-description{
-    font-size:24px;
-    text-align:center;
-    height:auto;
-    width:auto;
-}
-
-.header-about h1{
-    font-size:48px;
-    text-align:center;
-    height:auto;
-    width:auto;
-}
-
-.menu{
-    background-color: white;
-    font-family:'Courier New', Courier, monospace;
-    font-size:20px;
-    color:black;
-    height:75px;
-}
-
-.sidebar-menu{
-    background-color: white;
-}
-
-.sidebar-menu li{
-    padding-top:10px;
-    text-align:center;
-    width:25%;
-    float:left;
+header .info {
+    display: inline-block;
     vertical-align: top;
-    list-style-type:none;
 }
 
-.sidebar-menu a:hover{
-    text-decoration: underline;
-}
-
-.sidebar-menu li a{
-    text-decoration:none;
-    color:black;
-}
-
-.sidebar-socials{
-    background-color: white;
-}
-.sidebar-socials li{
-    padding-top:10px;
-    text-align:center;
-    width:25%;
-    float:left;
+header .info h1 {
+    display: inline-block;
     vertical-align: top;
-    list-style-type: none;
+    font-size: 48px;
 }
 
-.sidebar-socials li a{
-    color:black;
-}
-
-.main{
-    margin:0px;
-    background-color: white;
-    font-family:'Courier New', Courier, monospace;
-}
-
-.main-container{
-    padding-left:10%;
-    padding-right:10%;
-    color:black;
-}
-
-.about-me{
-    padding-top:100px;
-    padding-left:2.5%;
-}
-
-.about-me p{
+header .info h2 {
+    vertical-align: top;
+    margin-left: 20px;
     font-size: 20px;
-    font-family:'Courier New', Courier, monospace;
-    padding-left:5%; 
 }
 
-.right-now{
-    padding-top:50px;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.main-container h2{
-    padding-left: 2.5%;
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+    font-size: 20px;
 }
 
-.main-container h2 a{
+nav a {
     text-decoration: none;
-    color:black;
+    color: #fff;
 }
 
-.main-container p{
-    font-size:20px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-left:5%;
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #f0f0f0;
 }
 
-.main-container li{
-    font-size:20px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    list-style: none;
-    padding-left:2%;
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
 
-.main-container h3{
-    font-size:12px;
-    font-family:'Times New Roman', Times, serif;
-    padding-left:45%;
+img {
+    width: auto; /* Set the desired width */
+    height: 250px; /* Let the height scale proportionally */
+    display: inline-block;
 }
 
-.contact-main{
-    margin:0px;
+.main {
+    padding: 20px;
 }
 
-.contactContainer{
-    background-color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:black;
+.main-info {
+    padding-left: 20px;
 }
 
-.contactContainer h1{
-    text-align:center;
+.main-info .indent{
+    padding-left: 30px;
 }
 
-.contactContainer p{
-    padding-left:50px;
+.main-info .indent p{
+    margin: 0;
 }
 
-.contactContainer h2{
-    padding-left:100px;
-}
-
-.contactContainer h2 a{
-    text-decoration:none;
-    color:black;
-    opacity:0.8;
-}
-
-.main-container a:hover{
-    text-decoration:underline;
-}
-
-.contactContainer img{
-    width:200px;
-    height:200px;
-    padding-left:43%;
+.main-info .frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
 }

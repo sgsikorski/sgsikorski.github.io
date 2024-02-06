@@ -2,68 +2,38 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us"></html>
 
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="generator" content="Hugo 0.59.1">
-    <meta name="referrer" content="origin">
-    <meta name="viewport" content="width-divide-width,initial-scale=1.0, maximum-scale=1">
-
     <title>My projects</title>
-    <link rel = "stylesheet" href="projects.css">
+    <link rel = "stylesheet" href="main.css">
     <meta property="og:url" content="https://sgsikorski.github.io/projects/">
     <meta property="og:title" content="My projects">
 </head>
 
 <body class = "all">
-    <div class = "header">
-        <div class="container">
-            <div class ="header-about">
-                <a href="/">
-                    <h1>Scott Sikorski</h1>
-                </a>
-                <h1 id="school">
-                    University of Rochester
-                </h1>
-                
-                <h2 id="quick-description">
-                    Garmin Embedded Systems Software Engineer
-                </h2>
-            </div>
-            <div class="menu">
-                
-                <ul class="sidebar-menu">
-                    <li>
-                        <a href="/">About</a>
-                    </li>
-                    <li>
-                        <a href="/projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="/research">Research</a>
-                    </li>
-                    <li>
-                        <a href="/contact">Contact</a>
-                    </li>
-                </ul>
-
-                <ul class="sidebar-socials">
-                    <li>
-                        <a href='https://github.com/sgsikorski'>Github</a>
-                    </li>
-                    <li>
-                        <a href="https://hajim.rochester.edu/me/sites/sefkow/about/index.html">Research Overview</a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/scott-sikorski-733a601b5/">LinkedIn</a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/scott.sikorski/">Instagram</a>
-                    </li>
-                </ul>
-
-            </div>
-            
+    <header>
+        <img src="profile.jpeg" alt="Scott Sikorski">
+        <div class="info">
+            <h1>Scott Sikorski</h1>
+            <h2>sgsikorski20@gmail.com</h2>
+            <h2>nqj5ak@virginia.edu</h2>
         </div>
-    </div>
+    </header>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Work Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="https://github.com/sgsikorski">Github</a></li>
+                <li><a href="resume.pdf">Resume (Jan 2024)</a></li>
+                <li><a href="https://www.linkedin.com/in/scott-sikorski-733a601b5/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class = "main">
         <div class="school-projects">
@@ -99,19 +69,6 @@
                 and creates an edge between the nearest and new nodes. The back reference pointer to this
                 node is then tracked to find the shortest path.
             </p>
-            <p>
-                A short demonstration of the routing of the grasp (blue) and place (red) is shown below.
-            </p>
-            <video width="480" height="320" controls>
-                <source src="grasp_place.mov" type="video/mov">
-                Your browser does not support videos.
-            </video>
-            <h1>File compression</h1>
-            <p>
-                Class project in Java where given a file of any extension to reduce its memory storage.
-                Huffman encoding algorithm is used to reduce the storage of upwards of 100% and usually 50%.
-                Project also enables the user to decompress the file and see its original version.
-            </p>
         </div>
         <div class="SpruceLocks">
             <h1><a href='https://github.com/sgsikorki/SpruceLocks'>House automation</a></h1>
@@ -137,26 +94,10 @@
                 </div>
             </p>
         </div>
-        <div class ="project1">
-            <h1>Running Log</h1>
-            <p>
-                I decided to build a running log during the pandemic as a way to stay sane and reduce my likelihood of overtraining.
-                It is written in Python3 where users can add runs with distances, times, time of day, date, and comments. This data is 
-                stored in a .csv file which is sorted in order by date whenever users add new runs. Because we have an already sorted 
-                file, insertion sort is use after a user adds a run.
-            </p>
-            <div class="features">
-                <h2>Features</h2>
-                <ul>
-                    <li>Adding runs and being able to switch between imperial and metric units</li>
-                    <li>Fully interactive calendar that displays distance, time, and pace for each day in a month</li>
-                    <ul><li>Users can then click on the date in the calendar to see more info</li></ul>
-                    <li>Training load status. Determine if training is enough and if there's a risk for injury</li>
-                    <ul><li>Sleep data is scraped from Garmin API</li></ul>
-
-                </ul> 
-            </div>
-        </div>
     </div>
     
+    <footer>
+        <p>&copy; 2024 Scott Sikorski. All rights reserved.</p>
+        <p>Last updated: February 6th, 2024</p>
+    </footer>
 </body>
