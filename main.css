@@ -1,5 +1,5 @@
 body {
-    font-family: 'Monaco', sans-serif;
+    font-family: 'Monaco', Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -71,10 +71,12 @@ img {
 
 .main-info {
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 .main-info .indent{
     padding-left: 30px;
+    padding-right: 20px;
 }
 
 .main-info .indent p{
