@@ -29,7 +29,7 @@
         <nav>
             <ul>
                 <li><a href="https://github.com/sgsikorski">Github</a></li>
-                <li><a href="resume.pdf">Resume (Jan 2024)</a></li>
+                <li><a href="resume.pdf">Resume (June 2024)</a></li>
                 <li><a href="https://www.linkedin.com/in/scott-sikorski-733a601b5/">LinkedIn</a></li>
             </ul>
         </nav>
@@ -37,6 +37,46 @@
 
     <div class = "main">
         <div class="school-projects">
+            <h1>Reinforcement Learning for Task and Motion Planning in Mobile Home Robots</h1>
+            <p>I utilized a Double Deep Q-Network learning approach to complete complex sequential tasks in home environments.
+                The model was trained in unique environments on a variety of tasks that include motion and interactable tasks.
+                Custom state one-hot encoding was used to represent the robot's state space in relation to the environment to 
+                accommodate a real-time learning environment. Testing was conducted in the simulated environments to demonstrate
+                the model's ability to learn the optimal policy for minimal actions and no failures.
+            </p>
+            <p>Source code <a href="https://github.com/sgsikorski/LLTAMP">here</a></p>
+            <p>Find the full report <a href="RLrobots.pdf">here</a></p>
+
+            <h1>Lifelong Learning for Task and Motion Planning in Mobile Home Robots</h1>
+            <p>Dual policy task and motion planning approach to catastrophic forgetting, the forgetting of task completion
+                when placed in a new environment. One policy would guide the motion using a RRT. The other policy is trained
+                using a limited memory replay buffer to simulate the memory constraints of a robot. This policy would ensure
+                that the loss of previous tasks did not increase when learning new tasks using Gradient Episodic Memory. 
+                This model suffered from poor exploration, which was addressed in the reinforcement learning version of this.
+            </p>
+            <p>Source code <a href="https://github.com/sgsikorski/LLfTC">here</a></p>
+            <p>Find the full report <a href="LLrobots.pdf">here</a></p>
+
+            <h1>Deep Neural Network Verification</h1>
+            <p>Verification of various deep neural networks, including MNIST, CIFAR, and GTSRB using &alpha;-&beta;-CROWN and NeuralSAT.
+                Developed a sweeping &epsilon; method to analyze robustness properties for optimal verification and adversarial example detection.
+                Analyzed how verification varies with different network architectures and image complexity.
+            </p>
+            <p>Source code <a href="https://github.com/sgsikorski/DNN_Analysis">here</a></p>
+            <p>Find the full report <a href="CS6888_Final_Report.pdf">here</a></p>
+
+            <h1>Qiskit-Aer Quantum Computer Simulator Compiler Optimization</h1>
+            <p>Developed gate cancellation and qubit operation clustering for integration in high performance GPU
+                accelerated quantum computer simulator. 
+                <ul>
+                    <li>Gate Cancellation: Statically determined qubit basis state to eliminate CNOTs. Average of 25% decrease in gate count</li>
+                    <li>Gate Clustering: Circuit reorganization to cluster operations on the same qubits to reduce costly 
+                        CPU-GPU data exchanges. Static postpone dataflow analysis used to achieve 30% speedups in execution time</li>
+                </ul>
+            </p>
+            <p>Source code <a href="https://github.com/sgsikorski/aer-peephole">here</a></p>
+            <p>Find the full report <a href="QCOpt.pdf">here</a></p>
+
             <h1>Machine independent optimized C compiler</h1>
             <p>
                 For a subset of the C programming language, I built a compiler that scans, parses, builds intermediate representations, and optimizes the code.
@@ -51,13 +91,9 @@
                     </li>
                     <li>From AST, 3 address code is generated, which is machine independent, not control flow bound low level code</li>
                     <li>Using 3 address code, our basic blocks and control flow graph are generated to perform optimizations and thus data flow analysis</li>
+                    <li>Optimizations: Local Value Numbering, Dead Code elimination, Partial redunancy elimination</li>
                 </ul>
-                <h2>Optimization methods used</h2>
-                <ul>
-                    <li>Local Value Numbering</li>
-                    <li>Dead Code elimination</li>
-                    <li>Partial redunancy elimination</li>
-                </ul>
+
             </div>
             <h1>Autonomous 7 degree of freedom robot</h1>
             <p>
@@ -98,6 +134,6 @@
     
     <footer>
         <p>&copy; 2024 Scott Sikorski. All rights reserved.</p>
-        <p>Last updated: February 6th, 2024</p>
+        <p>Last updated: June 18th, 2024</p>
     </footer>
 </body>
