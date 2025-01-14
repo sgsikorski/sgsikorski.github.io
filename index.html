@@ -1,133 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Scott Sikorski</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Scott Sikorski</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+    rel="stylesheet">
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
+
 </head>
-<body>
-    <header>
-        <img src="profile.jpeg" alt="Scott Sikorski">
-        <div class="info">
-            <h1>Scott Sikorski</h1>
-            <h2>sgsikorski20@gmail.com</h2>
-            <h2>nqj5ak@virginia.edu</h2>
-        </div>
-    </header>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="jobs.html">Work Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li><a href="https://github.com/sgsikorski">Github</a></li>
-                <li><a href="resume.pdf">Resume (August 2024)</a></li>
-                <li><a href="https://www.linkedin.com/in/scott-sikorski-733a601b5/">LinkedIn</a></li>
-            </ul>
-        </nav>
-    </header>
+<body id="page-top">
 
-    <div class="main-info">
-        <h2>About Me!</h2>
-        <div class="indent">
-            <p>
-                Hey! I'm Scott Sikorski, a Masters student in computer science at the University of Virginia.
-                I recently graduated from the University of Rochester in 2023 where I previously worked in 
-                parallel computing with GPUs using CUDA and OpenMP and compiler optimizations with software analysis techniques.
-            </p>
-            <br>
-            <p>
-                While at UVA, I have been working on Task and Motion Planning for Mobile Home Robots. I have combined a variety of 
-                reinforcement learning techniques to create a model that can learn complex sequential tasks in home environments.
-
-                I have also worked on hardware accelerators, mainly GPUs, to speed up simulations. I've focused on improving
-                throughput of CPU-GPU communication and optimizing memory access patterns to reduce latency. 
-            </p>
-            <br>
-            <p>I have primarily done industry work in Embedded Software for consumer electronics.
-                This includes wearable fitness devices to help people track their workouts and train more effectively
-                in their respective sports. Being a big runner myself, I'm very passionate in creating tools that
-                can help people reach their goals and dreams. "No Human is Limited" ~ Eluid Kipchoge (First human under 2:00, Former Marathon World Record Holder)
-            </p>
-        </div>
-
-        <h2>Education</h2>
-        <div class="indent">
-            <p>2023 - Present</p>
-            <p>University of Virginia</p>
-            <p>Computer Science, MS</p>
-            <p>Coursework: Reinforcement Learning, Learning for Interactive Robots, Software Analysis, Advanced Compilers, Modern Computer Architectures, Human-Robot Interaction</p>
-            <br>
-            <p>2019 - 2023</p>
-            <p>University of Rochester</p>
-            <p>Computer Science, BS</p>
-        </div>
-
-        <h2>Experience</h2>
-        <div class="indent">
-            <p>Summer 2024</p>
-            <p>Northrup Grumman</p>
-            <p>Embedded Systems Software Engineer Intern</p>
-            <br>
-            <p>Summer 2022/2023</p>
-            <p>Garmin</p>
-            <p>Embedded Systems Software Engineer Intern</p>
-            <br>
-            <p>Spring 2024</p>
-            <p>University of Virginia</p>
-            <p>Teaching Assistant - <a href="https://cs4720-sp24-uva.github.io/">Mobile App Development</a></p>
-            <br>
-            <p>2021-2023</p>
-            <p>University of Rochester, Research Assistant</p>
-            <p>Supervisor: <a href="https://www.hajim.rochester.edu/me/people/faculty/Sefkow_Adam/index.html">Adam B. Sefkow</a>, TriForce Lab</p>
-            <p>Parallel GPU Physics Simulations</p>
-            <br>
-            <p>Spring 2023</p>
-            <p>University of Rochester</p>
-            <p>Teaching Assistant - <a href="https://www.cs.rochester.edu/u/sree/courses/csc-255-455/spring-2023/">Software Analysis (Advanced Compilers)</a></p>
-        </div>
-
-        <h2>Skills and Other</h2>
-        <div class="indent">
-            <p>Programming Languages: C, C++, Python3, CUDA, Kotlin, Swift, Java, Rust, PHP</p>
-            <p>Tools: Git, Jenkins, Jira, Docker, MATLAB</p>
-            <p>Robotics Tools: ROS, AI2THOR, ChoreoGraphe </p>
-            <p>ML Frameworks: Tensorflow, Keras, Gymnasium, PyTorch</p>
-            <p>Activate Secret Security Clearance granted May 2024</p>
-        </div>
-
-        <h2>Personal Interests</h2>
-        <div class="indent">
-            Outside of work, I am a Division 1 track athlete in the middle distance events at UVA.
-            I was also a member of the UR track team.
-            Check out my PRs on my <a href="https://worldathletics.org/athletes/united-states/scott-sikorski-14984137">World Athletics profile</a>.
-            Or even follow along with my training at <a href="https://www.strava.com/athletes/sikorski_scott">Strava</a> and see what I'm up to this week!
-        </div>
-        <div class="frame">
-            <iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/44713017/activity-summary/42fe708617f5761f35d7922d9f8144f26aa1c1e0'></iframe>
-        </div>
-        <br>
-        <div class="indent">
-            Outside of training, I enjoy spending time outdoors as we are near Shenandoah National Park.
-            I enjoy most types of music and am always looking for new artists to listen to.
-            Some albums that I've liked a lot recently include
-            <ul>
-                <li>Beloved! Paradise! Jazz? - McKinley Dixon</li>
-                <li>Ants From Up There - Black Country, New Road</li>
-                <li>Troupeau bleu - Cortex</li>
-                <li>MM..FOOD - MF DOOM</li>
-            </ul>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Start Bootstrap</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+        </li>
+      </ul>
     </div>
-    <footer>
-        <p>&copy; 2024 Scott Sikorski. All rights reserved.</p>
-        <p>Last updated: June 18th, 2024</p>
-    </footer>
+    <h6 class="mb-0">
+      <p>&copy; 2025 Scott Sikorski. All rights reserved.</p>
+      <p>Last updated: January 13th, 2025</p>
+      </h3>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+      <div class="my-auto">
+        <h1 class="mb-0">Scott
+          <span class="text-primary">Sikorski</span>
+        </h1>
+        <div class="subheading mb-5">Charlottesville, Virginia · (872) 220-2049 ·
+          <a href="mailto:sgs.sikorski20@gmail.com">sgs.sikorski20@gmail.com</a>
+        </div>
+        <p class="mb-5">Division 1 runner dedicated to designing, implementing, and integrating products to help and
+          inspire those who want to be the best version of themselves</p>
+        <ul class="list-inline list-social-icons mb-0">
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/scott-sikorski-733a601b5/">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://github.com/sgsikorski">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="documents/Scott.Sikorski.Resume.2024.pdf">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-file fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+        </ul>
+      </div>
+    </section>
+
+    <section class=" resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+      <div class="my-auto">
+        <h2 class="mb-5">Education</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">University of Virginia</h3>
+            <div class="subheading mb-3">Master of Science</div>
+            <div>Computer Science</div>
+            <p>GPA: 3.83</p>
+            <p>Coursework: Reinforcement Learning, Learning for Interactive Robots, Software Engineering for Machine
+              Learning, Software Analysis,
+              Human-Robot Interaction, Machine Learning</p>
+            <p>2x All-ACC Academic Honor Roll</p>
+            <p>2024 Mobile App Development Teaching Assistant</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2023 - May 2025</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">University of Rochester</h3>
+            <div class="subheading mb-3">Bachelor of Science</div>
+            <div>Computer Science</div>
+            <p>GPA: 3.65</p>
+            <p>Coursework: Advanced Compilers (Graduate), Machine Learning, Embedded Systems, Programming Languages,
+              Artificial Intelligence, Computer Organization and
+              Architecture, Operating Systems, Advanced Algorithms, Computational Complexity</p>
+            <p>Cross Country/Track and Field Team Captain</p>
+            <p>2x 1500M D3 All-American, Cross Country All-American, 3x D3 Academic All-American</p>
+            <p>Spring 2023 Advanced Compilers Teaching Assistant</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2019 - May 2023</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+      <div class="my-auto">
+        <h2 class="mb-5">Work Experience</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Embedded Software Engineer Intern</h3>
+            <div class="subheading mb-3">Northrop Grumman</div>
+            <p>Rapid development and deployment of full stack embedded software with new radar technology for autonomous
+              vehicles. Integrate Human-in-the-Loop services to embedded application.
+              Dockerize full main application with MongoDB for portable Linux usage.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2024 - Present</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Embedded Software Engineer Intern</h3>
+            <div class="subheading mb-3">Garmin</div>
+            <p>Developed and maintained high level software across shared C/C++ codebase for Forerunners.
+              Built 12 new sport profiles and integrated 3 new autonomous features for existing ski activities.
+              Built unit tests with GoogleTest for 10 transition animations and 25 watch faces to verify UI.
+              Built 5 new widgets in graphics library for new AMOLED display.
+              Contributed to release cycle of new product.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Summer 2022, Summer 2023</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Research Assistant</h3>
+            <div class="subheading mb-3">University of Rochester</div>
+            <p>Built and optimized Quiet Direct Simulation using CUDA for NVIDIA GPU for fast, low-noise fluid
+              simulation. 2000% improvement for 3d scenario over C++ CPU achieving below 1ns per particle per timestep.
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">June 2021 - June 2023</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+      <div class="my-auto">
+        <h2 class="mb-5">Projects</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Reinforcement Learning for Task and Motion Planning in Mobile Home Robots</h3>
+            <div class="subheading"><a href="https://github.com/sgsikorski/LLTAMP">Source Code</a></div>
+            <p>Double Deep Q-Network learning approach to complete complex sequential tasks in home environments. The
+              model was trained
+              in unique environments on a variety of tasks that include motion and interactable tasks. Custom state
+              one-hot encoding
+              was used to represent the robot's state space in relation to the environment to accommodate a real-time
+              learning
+              environment. Testing was conducted in the simulated environments to demonstrate the model's ability to
+              learn the optimal
+              policy for minimal actions and no failures.</p>
+
+            <h3 class="mb-0">Total Running</h3>
+            <div class="subheading">Cross platform running app to track, plan, and thrive on your runs</div>
+            <div class="subheading"><a href="https://github.com/sgsikorski/TotalRunning">Source Code</a></div>
+            <p>
+              Features: weekly run log with Garmin API, calculator, feed of friends, goals, personalized metrics
+              Used Firebase for backend NoSQL database and user authentication
+              Deployed self-trained running metric AI models on personal Pi server using Flask and REST APIs
+            </p>
+
+            <h3 class="mb-0">Lifelong Learning for Task and Motion Planning in Mobile Home Robots</h3>
+            <div class="subheading"><a href="https://github.com/sgsikorski/LLfTC">Source Code</a></div>
+            <p>Dual policy task and motion planning approach to catastrophic forgetting, the forgetting of task
+              completion when placed
+              in a new environment. One policy would guide the motion using a RRT. The other policy is trained using a
+              limited memory
+              replay buffer to simulate the memory constraints of a robot. This policy would ensure that the loss of
+              previous tasks
+              did not increase when learning new tasks using Gradient Episodic Memory. This model suffered from poor
+              exploration,
+              which was addressed in the reinforcement learning version of this.</p>
+
+            <h3 class="mb-0">Machine Independent Optimized C Compiler</h3>
+            <p>
+              For a subset of the C programming language, I built a compiler that scans, parses, builds intermediate
+              representations, and optimizes the code.
+              Scanner, parser, and abstract syntax tree (AST) are built using C++. 3 address code and all optimizations
+              are
+              implemented using Python3.
+            </p>
+            <div class="subheading">Features</div>
+            <ul>
+              <li>Scanner that finds syntax errors</li>
+              <li>Parser that builds an abstract syntax tree (AST) Error recovery is implented using Wirth's algorithm
+                so that
+                after an error, the program will
+                recover to find additional errors that are displayed to user.
+              </li>
+              <li>From AST, 3 address code is generated, which is machine independent, not control flow bound low level
+                code</li>
+              <li>Using 3 address code, our basic blocks and control flow graph are generated to perform optimizations
+                and thus
+                data flow analysis</li>
+              <li>Optimizations: Local Value Numbering, Dead Code elimination, Partial redunancy elimination</li>
+            </ul>
+
+
+            <h3 class="mb-0">Autonomous 7-DOF Robot</h3>
+            <div class="subheading"></div>
+            <p>Robot autonomously performs grasping and placing of objects in a world environment. World environment is
+              built using sensors as state space is discretized over pi/16.0 radians. Rapidly exploring random trees
+              (RRTs) are used
+              to sample the state space and find shortest path. This is done by randomly sampling in robot link and
+              joint limits then
+              finding the nearest constructed node. A new node is added pi/16.0 radians in the direction of the sampled
+              node and
+              creates an edge between the nearest and new nodes. The back reference pointer to this node is then tracked
+              to find the
+              shortest path</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+      <div class="my-auto">
+        <h2 class="mb-5">Skills</h2>
+
+        <div class="subheading mb-3">Programming Languages</div>
+        <ul>
+          <li>Python3</li>
+          <li>C11/C++20</li>
+          <li>Cuda12</li>
+          <li>Dart</li>
+          <li>C#</li>
+        </ul>
+        <div class="subheading mb-3">Frameworks</div>
+        <ul>
+          <li>Git</li>
+          <li>Jenkins CI/CD</li>
+          <li>Docker</li>
+          <li>ROS</li>
+          <li>Tensorflow</li>
+          <li>PyTorch</li>
+          <li>Flutter</li>
+        </ul>
+        <div class="subheading mb-3">Active Secret Security Clearance granted May 2024</div>
+        <div class="subheading mb-3">Languages</div>
+        <ul>
+          <li>
+            Native English
+          </li>
+          <li>
+            Professional Working French
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+      <div class="my-auto">
+        <h2 class="mb-5">Interests</h2>
+        <div style="display: flex; gap: 1%; align-items:center">
+          <iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no'
+            src='https://www.strava.com/athletes/44713017/activity-summary/42fe708617f5761f35d7922d9f8144f26aa1c1e0'></iframe>
+          <p>Outside of school and work, I am a Division 1 track athlete in the mile, 3K, 5K at UVA.
+            I was also a member of the UR track team.
+            Check out my PRs on my <a
+              href="https://worldathletics.org/athletes/united-states/scott-sikorski-14984137">World
+              Athletics profile</a>.
+            Or even follow along with my training at <a href="https://www.strava.com/athletes/sikorski_scott">Strava</a>
+            and see what I'm up to this week!</p>
+        </div>
+        <p>
+          When I'm not competitively training, I enjoy spending time outdoors as we are near Shenandoah National Park.
+          I enjoy most types of music and am always looking for new artists to listen to.
+          Some of my top albums include</p>
+        <ul class="list-inline">
+          <li><i class="list-inline-item">Imaginal Disk - Magdalena Bay</i></li>
+          <li><i class="list-inline-item">Ants From Up There - Black Country, New Road</i></li>
+          <li><i class="list-inline-item">Free Nationals - Free Nationals</i></li>
+          <li><i class="list-inline-item">Chasing Waves - Vista Kicks</i></li>
+          <li><i class="list-inline-item">What's Going On - Marvin Gaye</i></li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
 </body>
+
 </html>
