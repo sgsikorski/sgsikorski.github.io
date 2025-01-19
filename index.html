@@ -64,7 +64,7 @@
     </div>
     <h6 class="mb-0">
       <p>&copy; 2025 Scott Sikorski. All rights reserved.</p>
-      <p>Last updated: January 13th, 2025</p>
+      <p>Last updated: January 19th, 2025</p>
       </h3>
   </nav>
 
@@ -206,7 +206,10 @@
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Reinforcement Learning for Task and Motion Planning in Mobile Home Robots</h3>
-            <div class="subheading"><a href="https://github.com/sgsikorski/LLTAMP">Source Code</a></div>
+            <div class="subheading">
+              <a href="https://github.com/sgsikorski/LLTAMP">Source Code</a> ·
+              <a href="documents/RLrobots.pdf">Report</a>
+            </div>
             <p>Double Deep Q-Network learning approach to complete complex sequential tasks in home environments. The
               model was trained
               in unique environments on a variety of tasks that include motion and interactable tasks. Custom state
@@ -219,11 +222,37 @@
 
             <h3 class="mb-0">Total Running</h3>
             <div class="subheading">Cross platform running app to track, plan, and thrive on your runs</div>
-            <div class="subheading"><a href="https://github.com/sgsikorski/TotalRunning">Source Code</a></div>
+            <div class="subheading">
+              <a href="https://github.com/sgsikorski/TotalRunning">Source Code</a> ·
+              <a href="documents/LLrobots.pdf">Report</a>
+            </div>
             <p>
               Features: weekly run log with Garmin API, calculator, feed of friends, goals, personalized metrics
               Used Firebase for backend NoSQL database and user authentication
               Deployed self-trained running metric AI models on personal Pi server using Flask and REST APIs
+            </p>
+
+            <h3 class="mb-0">Dirichlet Processes for Injury Prevention using Running Activity Categorization</h3>
+            <div class="subheading">
+              <a href="https://github.com/sgsikorski/STAT6020">Source Code</a> ·
+              <a href="documents/DPMM.pdf">Report</a>
+            </div>
+            <p>
+              Running is generally considered to be a highly individualistic sport where one
+              can run at their preferences. This has been reinforced through wearable running
+              watches that introduce a wide multitude of running related metrics to the user,
+              during and after each run. This data contains valuable training information and
+              trends that models can identify. Particularly, there exist overtraining trends which
+              can lead to both acute and longer term stress injuries, sidelining runners for weeks
+              up to months. Because everyone’s running data is vastly different, an adaptable
+              model is needed. This is presented in the form of a Dirichlet Process Mixture
+              Model (DPMM) that can dynamically grow and shrink clusters with more data and
+              training iterations. I present a DPMM implementation for running categorization
+              with a novel hierarchical and standard evaluation metrics to assess its performance.
+              2 separate dataset partitions, random and recent, are used to check immediate and
+              long-term predictive capabilities. DPMM achieves upward of 96% training and
+              94% hierarchical accuracy on the tiered results, a 5-23% increase compared to the
+              SkLearn baseline.
             </p>
 
             <h3 class="mb-0">Lifelong Learning for Task and Motion Planning in Mobile Home Robots</h3>
@@ -237,6 +266,81 @@
               did not increase when learning new tasks using Gradient Episodic Memory. This model suffered from poor
               exploration,
               which was addressed in the reinforcement learning version of this.</p>
+
+            <h3 class="mb-0">Autonomous 7-DOF Robot</h3>
+            <div class="subheading"><a href="documents/grasp_place.mov">Example Movie</a></div>
+            <p>Robot autonomously performs grasping and placing of objects in a world environment. World environment is
+              built using sensors as state space is discretized over pi/16.0 radians. Rapidly exploring random trees
+              (RRTs) are used
+              to sample the state space and find shortest path. This is done by randomly sampling in robot link and
+              joint limits then
+              finding the nearest constructed node. A new node is added pi/16.0 radians in the direction of the sampled
+              node and
+              creates an edge between the nearest and new nodes. The back reference pointer to this node is then tracked
+              to find the
+              shortest path</p>
+
+            <h3 class="mb-0">Deep Neural Network Verification</h3>
+            <div class="subheading">
+              <a href="https://github.com/sgsikorski/DNN_Analysis">Source Code</a> ·
+              <a href="documents/CS6888_Final_Report.pdf">Report</a>
+            </div>
+            <p>
+              Deep Neural Networks (DNNs) have revolutionized the field of
+              Machine Learning and consequently countless fields such as com-
+              puter vision, natural language processing, and autonomous vehi-
+              cles. While these networks achieve unparalleled performance in
+              complex tasks, the black-box nature of DNNs introduce concerns
+              regarding interpretability of decision-making, prediction biases,
+              and security against adversarial attacks. Researchers and practi-
+              tioners have looked to employ DNN verification tools to mitigate
+              these concerns by evaluating the robustness of networks to expose
+              vulnerabilities in models. However, verifiers trail in development
+              behind cutting-edge models due to the rapidly evolving field of
+              DNN research. Looking to close this gap, there have been growing
+              efforts to improve verification tools by determining their applica-
+              tions and shortcomings. This paper aims to take a step toward better
+              understanding the strengths and weaknesses of DNN verifiers when
+              applied to a variety of network architectures. In this paper, sev-
+              eral DNNs are selected as benchmarks to determine the effects of
+              network architectures and robustness properties on network verifi-
+              cation. State-of-the-art DNN verification tools, 𝛼-𝛽-CROWN and
+              NeuralSAT, are utilized to verify benchmarks and are compared in
+              their abilities to verify networks effectively and efficiently. Parame-
+              ters of networks such as the number of hidden layers, activation
+              functions, layer types, and degree of perturbation are varied to
+              study their relationships with network verification and verification
+              time.
+            </p>
+
+            <h3 class="mb-0">GPU-based Quantum Circuit Simulation Transpilation Optimizations</h3>
+            <div class="subheading">
+              <a href="https://github.com/sgsikorski/aer-peephole">Source Code</a> ·
+              <a href="documents/QCOpt.pdf">Report</a>
+            </div>
+            <p>GPU-based quantum computer
+              transpilation optimizations are proposed within a quantum circuit simulator.
+              Quantum Peephole Optimization (QPhO) performs gate can-
+              cellation and qubit gate clustering to reduce the number of
+              necessary gates and reduce costly CPU-GPU data exchanges.
+              It leverages single qubit basis state information that can be
+              statically determined at transpile time. Using this information,
+              two qubit CN OT operations can be eliminated or replaced
+              with less expensive gates due to the control qubit basis state
+              not activating the target qubit. Passes are conducted over the
+              circuit until convergence is reached. Gate cancellation reduces
+              the number of qubits unnecessarily being transferred to the GPU
+              and can delay involvement. This approach is also extended with
+              cluster circuit reordering techniques. To reduce the number of
+              data transfers, single non-involved qubit gates can be delayed
+              according to the latest used definition. This uses a line by line
+              basic block representation of QASM2.0 code. Experimentation
+              is done on a variety of 28+ qubit circuits that are the core of
+              many popular algorithms. Transpilation time was not shown to
+              dramatically increase while benefitting from an average of 10.6%
+              (up to 23.5%) reduction in number of gates and 91% (up to
+              300%) decrease in execution time over the baseline non-optimized
+              circuit.</p>
 
             <h3 class="mb-0">Machine Independent Optimized C Compiler</h3>
             <p>
@@ -261,20 +365,6 @@
                 data flow analysis</li>
               <li>Optimizations: Local Value Numbering, Dead Code elimination, Partial redunancy elimination</li>
             </ul>
-
-
-            <h3 class="mb-0">Autonomous 7-DOF Robot</h3>
-            <div class="subheading"></div>
-            <p>Robot autonomously performs grasping and placing of objects in a world environment. World environment is
-              built using sensors as state space is discretized over pi/16.0 radians. Rapidly exploring random trees
-              (RRTs) are used
-              to sample the state space and find shortest path. This is done by randomly sampling in robot link and
-              joint limits then
-              finding the nearest constructed node. A new node is added pi/16.0 radians in the direction of the sampled
-              node and
-              creates an edge between the nearest and new nodes. The back reference pointer to this node is then tracked
-              to find the
-              shortest path</p>
 
           </div>
         </div>
