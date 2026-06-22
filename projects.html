@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Projects — Scott Sikorski</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link href="css/resume.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <span class="d-none d-lg-block">
+      <a class="navbar-brand" href="index.html">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+      </a>
+    </span>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#interests">Interests</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-footer">
+      <p>&copy; 2026 Scott Sikorski</p>
+      <p>Updated June 2026</p>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+      <div class="my-auto">
+        <h2 class="mb-5">Projects</h2>
+
+        <div class="project-item" id="rl-tamp">
+          <h3 class="mb-0">Reinforcement Learning for Task and Motion Planning in Mobile Home Robots</h3>
+          <div class="subheading mb-2">
+            <a href="https://github.com/sgsikorski/LLTAMP">Source Code</a> &middot;
+            <a href="documents/RLrobots.pdf">Report</a>
+          </div>
+          <p>Double Deep Q-Network learning approach to complete complex sequential tasks in home environments. The model was trained in unique environments on a variety of tasks that include motion and interactable tasks. Custom state one-hot encoding was used to represent the robot's state space in relation to the environment to accommodate a real-time learning environment. Testing was conducted in the simulated environments to demonstrate the model's ability to learn the optimal policy for minimal actions and no failures.</p>
+        </div>
+
+        <div class="project-item" id="total-running">
+          <h3 class="mb-0">Total Running</h3>
+          <div class="subheading mb-2"><a href="https://github.com/sgsikorski/TotalRunning">Source Code</a></div>
+          <p>Weekly run log with Garmin API, social feed, goals, and personalized metrics. Built on Firebase for backend NoSQL database and user authentication. Self-trained running metric AI models deployed on a personal Pi server via Flask and REST APIs.</p>
+        </div>
+
+        <div class="project-item" id="dpmm">
+          <h3 class="mb-0">Dirichlet Processes for Injury Prevention using Running Activity Categorization</h3>
+          <div class="subheading mb-2">
+            <a href="https://github.com/sgsikorski/STAT6020">Source Code</a> &middot;
+            <a href="documents/DPMM.pdf">Report</a>
+          </div>
+          <p>Dirichlet Process Mixture Model (DPMM) implementation for running activity categorization that dynamically grows and shrinks clusters with more data and training iterations. Novel hierarchical and standard evaluation metrics assess performance across random and recent dataset partitions. DPMM achieves upward of 96% training and 94% hierarchical accuracy &mdash; a 5&ndash;23% increase over the SkLearn baseline.</p>
+        </div>
+
+        <div class="project-item" id="ll-tamp">
+          <h3 class="mb-0">Lifelong Learning for Task and Motion Planning in Mobile Home Robots</h3>
+          <div class="subheading mb-2">
+            <a href="https://github.com/sgsikorski/LLfTC">Source Code</a> &middot;
+            <a href="documents/LLrobots.pdf">Report</a>
+          </div>
+          <p>Dual-policy task and motion planning approach to catastrophic forgetting. One policy guides motion via RRT; the other is trained with a limited memory replay buffer using Gradient Episodic Memory to ensure prior task performance does not degrade when learning new tasks.</p>
+        </div>
+
+        <div class="project-item" id="robot-7dof">
+          <h3 class="mb-0">Autonomous 7-DOF Robot</h3>
+          <div class="subheading mb-2"><a href="documents/grasp_place.mov">Example Video</a></div>
+          <p>Robot autonomously grasps and places objects in a sensor-built world environment. State space is discretized over &pi;/16 radians; Rapidly Exploring Random Trees (RRTs) sample the space to find the shortest path by randomly sampling within joint limits, finding the nearest node, and stepping toward the sample.</p>
+        </div>
+
+        <div class="project-item" id="dnn-verification">
+          <h3 class="mb-0">Deep Neural Network Verification</h3>
+          <div class="subheading mb-2">
+            <a href="https://github.com/sgsikorski/DNN_Analysis">Source Code</a> &middot;
+            <a href="documents/CS6888_Final_Report.pdf">Report</a>
+          </div>
+          <p>Benchmark study of state-of-the-art DNN verification tools (&alpha;-&beta;-CROWN and NeuralSAT) across varied network architectures. Parameters including hidden layers, activation functions, layer types, and perturbation degree are varied to study their relationships with verification effectiveness and execution time.</p>
+        </div>
+
+        <div class="project-item" id="quantum">
+          <h3 class="mb-0">GPU-based Quantum Circuit Simulation Transpilation Optimizations</h3>
+          <div class="subheading mb-2">
+            <a href="https://github.com/sgsikorski/aer-peephole">Source Code</a> &middot;
+            <a href="documents/QCOpt.pdf">Report</a>
+          </div>
+          <p>Quantum Peephole Optimization (QPhO) performs gate cancellation and qubit gate clustering to reduce unnecessary gates and costly CPU&ndash;GPU data exchanges. Leverages single-qubit basis state information determined at transpile time. Experiments across 28+ qubit circuits show an average 10.6% (up to 23.5%) reduction in gates and 91% (up to 300%) decrease in execution time.</p>
+        </div>
+
+        <div class="project-item" id="compiler">
+          <h3 class="mb-0">Machine Independent Optimized C Compiler</h3>
+          <p>Compiler for a subset of C built in C++ (scanner, parser, AST) and Python3 (3-address code + optimizations). Implements local value numbering, dead code elimination, and partial redundancy elimination over a basic block control flow graph. Error recovery uses Wirth's algorithm to report multiple syntax errors per run.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts -->
+  <script src="js/resume.min.js"></script>
+
+</body>
+
+</html>

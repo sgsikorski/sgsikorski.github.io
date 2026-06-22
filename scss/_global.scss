@@ -3,7 +3,7 @@
 body {
   @include body-font;
   padding-top: 54px;
-  color: $gray-600;
+  color: #475569;
 }
 @media (min-width: 992px) {
   body {
@@ -20,31 +20,44 @@ h5,
 h6 {
   @include heading-font;
   font-weight: 700;
-  text-transform: uppercase;
-  color: $gray-800;
+  color: #1e293b;
 }
 
 h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
+  font-size: 5rem;
+  line-height: 4.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 2.75rem;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 .subheading {
-  text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   @include heading-font;
-  font-size: 1.35rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $sky;
 }
 
 .list-social-icons {
   a {
-    color: $gray-700;
+    color: #64748b;
     &:hover {
-      color: $primary;
+      color: $sky;
     }
     .fa-lg {
       font-size: 1.75rem;

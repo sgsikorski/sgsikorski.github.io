@@ -1,57 +1,79 @@
 /*!
- * Start Bootstrap - Resume v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ * Scott Sikorski - Portfolio
  */
+
+/* Base */
 body {
-  font-family: 'Open Sans', serif;
+  font-family: 'Inter', sans-serif;
   padding-top: 54px;
-  color: #868e96; }
+  color: #475569;
+  background: #ffffff; }
 
 @media (min-width: 992px) {
   body {
     padding-top: 0;
     padding-left: 17rem; } }
 
+/* Typography */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
-  color: #343a40; }
+  color: #1e293b; }
 
 h1 {
-  font-size: 6rem;
-  line-height: 5.5rem; }
+  font-size: 5rem;
+  line-height: 4.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-transform: uppercase; }
 
 h2 {
-  font-size: 3.5rem; }
+  font-size: 2.75rem;
+  letter-spacing: -0.01em;
+  text-transform: uppercase; }
+
+h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0; }
 
 .subheading {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.72rem;
   text-transform: uppercase;
-  font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
-  font-size: 1.35rem; }
+  letter-spacing: 0.1em;
+  color: #38bdf8; }
 
+/* Social icons */
 .list-social-icons a {
-  color: #495057; }
+  color: #64748b; }
   .list-social-icons a:hover {
-    color: #BD5D38; }
+    color: #38bdf8; }
   .list-social-icons a .fa-lg {
     font-size: 1.75rem; }
 
 .list-icons {
   font-size: 3rem; }
   .list-icons .list-inline-item i:hover {
-    color: #BD5D38; }
+    color: #38bdf8; }
 
+/* Sidebar nav */
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: rgba(248, 250, 252, 0.65);
+  transition: color 0.15s ease; }
+  #sideNav .navbar-nav .nav-item .nav-link:hover {
+    color: #38bdf8; }
 
 @media (min-width: 992px) {
   #sideNav {
@@ -68,9 +90,9 @@ h2 {
       margin: auto auto 0;
       padding: 0.5rem; }
       #sideNav .navbar-brand .img-profile {
-        max-width: 10rem;
-        max-height: 10rem;
-        border: 0.5rem solid rgba(255, 255, 255, 0.2); }
+        max-width: 9rem;
+        max-height: 9rem;
+        border: 3px solid rgba(56, 189, 248, 0.35); }
     #sideNav .navbar-collapse {
       display: flex;
       align-items: flex-start;
@@ -85,8 +107,19 @@ h2 {
           #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
             display: block; } }
 
+/* Sidebar footer */
+.nav-footer {
+  font-size: 0.65rem;
+  color: rgba(248, 250, 252, 0.28);
+  padding: 1rem 0.75rem 1.25rem;
+  line-height: 1.8;
+  text-align: center; }
+  .nav-footer p {
+    margin: 0; }
+
+/* Content sections */
 section.resume-section {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #e2e8f0;
   padding-top: 5rem !important;
   padding-bottom: 5rem !important; }
   section.resume-section .resume-item .resume-date {
@@ -103,13 +136,38 @@ section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important; } }
 
+/* Color overrides */
 .bg-primary {
-  background-color: #BD5D38 !important; }
+  background-color: #0f172a !important; }
 
 .text-primary {
-  color: #BD5D38 !important; }
+  color: #38bdf8 !important; }
 
 a {
-  color: #BD5D38; }
-  a:hover, a:focus, a:active {
-    color: #824027; }
+  color: #38bdf8; }
+  a:hover,
+  a:focus,
+  a:active {
+    color: #0ea5e9; }
+
+/* Skill badges */
+.skill-tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: #f0f9ff;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+  border-radius: 9999px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  margin: 0.2rem 0.3rem 0.2rem 0; }
+
+/* Project separators */
+.project-item {
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid #e2e8f0; }
+  .project-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0; }
